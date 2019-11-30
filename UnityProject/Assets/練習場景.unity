@@ -183,6 +183,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 90077755}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &90077757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90077756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd749466e960b340bef72370e0176b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &90077758
 AudioSource:
   m_ObjectHideFlags: 0
@@ -433,6 +445,23 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1284488704}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1284488706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284488705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 832fcd3544b19c74aa034400dacf75e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Human_HP: 100
+  Human_Atk: 0
+  ZombimeControl: {fileID: 90077757}
+  Human_aud: {fileID: 0}
+  Human_ac: {fileID: 0}
 --- !u!82 &1284488707
 AudioSource:
   m_ObjectHideFlags: 0
