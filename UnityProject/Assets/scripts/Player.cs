@@ -2,10 +2,10 @@
 
 public class Player : MonoBehaviour
 {
-    [Header("人類血量"), Range(0f, 100f), Tooltip("調整玩家血量")]
+    [Header("小屁孩血量"), Range(0f, 100f), Tooltip("調整小屁孩血量")]
     public float Human_HP = 100f;
 
-    [Header("人類攻擊力"), Tooltip("輸入玩家攻擊力")]
+    [Header("小屁孩攻擊力"), Tooltip("輸入小屁孩攻擊力")]
     public float Human_Atk;
 
     [Header("殭屍控制")]
@@ -14,21 +14,26 @@ public class Player : MonoBehaviour
     [Header("聲音音源")]
     public AudioSource Human_aud;
 
-    [Header("人類攻擊的音效")]
+    [Header("小屁孩攻擊的音效")]
     public AudioClip Human_ac;
-
 
     private void Update()
     {
-        attack();
+        HumanAttack();
     }
 
-    public void attack()
+    public void HumanAttack()
     {
+        Human_Atk = Random.Range(0f, 50f);
         if (Input.GetKeyDown(KeyCode.A))
         {
-            print("小屁孩攻擊殭屍！殭屍血量剩下：" + (Human_HP-Random.Range(0f,100f)));
-            print(Random.Range(0f, 100f));
+            Human_aud.PlayOneShot(Human_ac);
+            ZombimeControl.Zombie_HP = ZombimeControl.Zombie_HP - Human_Atk;
+            print("小屁孩攻擊殭屍！殭屍血量剩下：" + ZombimeControl.Zombie_HP);
+            if(ZombimeControl.Zombie_HP <= 0)
+            {
+                print("殭屍被打爛了!");
+            }
         }
     }
 

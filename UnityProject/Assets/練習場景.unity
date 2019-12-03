@@ -195,6 +195,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd749466e960b340bef72370e0176b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Zombie_HP: 100
+  Zombie_Atk: 0
+  HumanControl: {fileID: 1284488706}
+  Zombie_aud: {fileID: 90077758}
+  Zombie_ac: {fileID: 8300000, guid: b2814898b8005b04dbb2fadf2cf26112, type: 3}
 --- !u!82 &90077758
 AudioSource:
   m_ObjectHideFlags: 0
@@ -460,8 +465,8 @@ MonoBehaviour:
   Human_HP: 100
   Human_Atk: 0
   ZombimeControl: {fileID: 90077757}
-  Human_aud: {fileID: 0}
-  Human_ac: {fileID: 0}
+  Human_aud: {fileID: 1284488707}
+  Human_ac: {fileID: 8300000, guid: e5596bb1fd662e5418d0d33c355a4478, type: 3}
 --- !u!82 &1284488707
 AudioSource:
   m_ObjectHideFlags: 0
